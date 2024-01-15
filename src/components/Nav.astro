@@ -13,10 +13,7 @@ const textLinks: { label: string; href: string }[] = [
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
 	{ label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
 	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	{ label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	{ label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
 	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
 ];
 ---
@@ -230,7 +227,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 	.link {
 		display: inline-block;
-		color:black;
+		color:var(--text);
 		text-decoration: none;
 	}
 
@@ -316,26 +313,25 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			background: var(--gradient-stroke);
 			border-radius: 999rem;
 			z-index: -1;
-			border: 1px solid #000000;
+			border: 1px solid var(--text);
 		}
 
 		.link {
 			padding: 0.5rem 1rem;
 			border-radius: 999rem;
-			transition:
-				color var(--theme-transition),
-				background-color var(--theme-transition);
+			
+				
 		}
 
 		.link:hover,
 		.link:focus {
 			color: var(--gray-100);
-			background-color: #9FA6B1;
+			background-color: var(--gray-600);
 		}
 
 		.link.active {
-			color:#F0F1F5;
-			background-color: #9FA6B1;
+			color:var(--back);
+			background-color: var(--gray-100);
 		}
 
 		.menu-footer {

@@ -9,7 +9,7 @@ interface Props {
 	size?: string;
 }
 
-const { color = '#000000', gradient, icon, size } = Astro.props;
+const { color = 'currentColor', gradient, icon, size } = Astro.props;
 const iconPath = iconPaths[icon];
 
 const attrs: HTMLAttributes<'svg'> = {};
@@ -24,8 +24,8 @@ const gradientId = 'icon-gradient-' + Math.round(Math.random() * 10e12).toString
 	height="40"
 	viewBox="0 0 256 256"
 	aria-hidden="true"
-	stroke={gradient ? `#000000` : color}
-	fill={gradient ? `  #000000` : color}
+	stroke={gradient ? `currentColor` : color}
+	fill={gradient ? `  currentColor` : color}
 	{...attrs}
 >
 	<g set:html={iconPath} />
@@ -53,4 +53,5 @@ const gradientId = 'icon-gradient-' + Math.round(Math.random() * 10e12).toString
 		width: var(--size, 1em);
 		height: var(--size, 1em);
 	}
+
 </style>

@@ -5,32 +5,37 @@ import Icon from './Icon.astro';
 <section class="box skills">
 
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="chart" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Statistician</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+		<div class="flex items-center gap-2">
+			<Icon icon="chart" color="var(--accent-regular)" size="2.5rem" gradient />
+			<h2>Statistician</h2>
+		</div>
+			<p>Diving deep into data with R and Python is where I find joy.After years leading teams,I'm back to my first love: crafting stories from numbers to help companies grow.</p>
 	</div>
 
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<div class="flex items-center gap-2">
+			<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+			<h2>Code Craftsman</h2>
+		</div>
+		<p>I love building things that make a difference.From the first line of code to the last graph, I put my heart into creating tools that turn complex data into clear decisions.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Manager</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
+		<div class="flex items-center gap-2">
+			<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+			<h2>Industry Manager</h2>
+		</div>
+		<p>Guiding more than 200 folks at places like IBM was an adventure. Now,my journey is about mixing that leadership magic with my love for stats to help teams find their path.</p>
 	</div>
 	
 </section>
 
 <style>
 	.box {
-		border: 1px solid var(--gray-800);
 		border-radius: 0.75rem;
 		padding: 1.5rem;
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
-		border: 1px solid #000000;
+		border: 1px solid var(--text);
 	}
 
 	.skills {
@@ -44,7 +49,7 @@ import Icon from './Icon.astro';
 	}
 
 	.skills p {
-		color: var(--gray-400);
+		color: var(--gray-100);
 	}
 
 	@media (min-width: 50em) {
