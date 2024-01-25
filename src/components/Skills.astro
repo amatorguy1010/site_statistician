@@ -1,71 +1,30 @@
 ---
 import Icon from './Icon.astro';
 ---
+<section class="rounded-3xl text-black dark:text-white p-6 bg-white/80 dark:bg-gray-900/20 gap-12 border border-gray-700 shadow-sm space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:p-10 lg:gap-20">
 
-<section class="box skills">
-
-	<div class="stack gap-2 lg:gap-4">
-		<div class="flex items-center gap-2">
-			<Icon icon="chart" color="var(--accent-regular)" size="2.5rem" gradient />
-			<h2>Statistician</h2>
+	<div class="space-y-2 lg:space-y-4">
+		<div class="flex items-center space-x-2 ">
+			<Icon icon="chart" size="2.5rem" gradient />
+			<h2 class="text-lg lg:text-2xl">Statistician</h2>
 		</div>
-			<p>Diving deep into data with R and Python is where I find joy.After years leading teams,I'm back to my first love: crafting stories from numbers to help companies grow.</p>
+		<p>Diving deep into data with R and Python is where I find joy. After years leading teams,I'm back to my first love: crafting stories from numbers to help companies grow.</p>
 	</div>
 
-	<div class="stack gap-2 lg:gap-4">
-		<div class="flex items-center gap-2">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-			<h2>Code Craftsman</h2>
+	<div class="space-y-2 lg:space-y-4">
+		<div class="flex items-center space-x-2">
+			<Icon icon="terminal-window" size="2.5rem" gradient />
+			<h2 class="text-lg lg:text-2xl">Code Craftsman</h2>
 		</div>
-		<p>I love building things that make a difference.From the first line of code to the last graph, I put my heart into creating tools that turn complex data into clear decisions.</p>
+		<p>I love building things that make a difference. From the first line of code to the last graph, I put my heart into creating tools that turn complex data into clear decisions.</p>
 	</div>
-	<div class="stack gap-2 lg:gap-4">
-		<div class="flex items-center gap-2">
-			<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-			<h2>Analytics Advisor</h2>
+
+	<div class="space-y-2 lg:space-y-4">
+		<div class="flex items-center space-x-2">
+			<Icon icon="trophy" size="2.5rem" gradient />
+			<h2 class="text-lg lg:text-2xl">Analytics Advisor</h2>
 		</div>
-		<p>Guiding more than 200 folks at places like IBM was an adventure. Now,my journey is about mixing that leadership magic with my love for stats to help teams find their path.</p>
+		<p>Guiding more than 200 folks at places like IBM was an adventure. Now, my journey is about mixing that leadership magic with my love for stats to help teams find their path.</p>
 	</div>
-	
+
 </section>
-
-<style>
-	.box {
-		border-radius: 0.75rem;
-		padding: 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-		border: 1px solid var(--text);
-	}
-
-	.skills {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-	}
-
-	.skills h2 {
-		font-size: var(--text-lg);
-	}
-
-	.skills p {
-		color: var(--gray-100);
-	}
-
-	@media (min-width: 50em) {
-		.box {
-			border-radius: 1.5rem;
-			padding: 2.5rem;
-		}
-
-		.skills {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 5rem;
-		}
-
-		.skills h2 {
-			font-size: var(--text-2xl);
-		}
-	}
-</style>
