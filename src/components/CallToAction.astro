@@ -6,7 +6,7 @@ interface Props {
 const { href } = Astro.props;
 ---
 
-<a href={href}><slot /></a>
+<a class="border border-gray-700 dark:bg-gray-900/10 bg-white/80" href={href}><slot /></a>
 
 <style>
 	a {
@@ -21,9 +21,8 @@ const { href } = Astro.props;
 		line-height: 1.1;
 		border-radius: 999rem;
 		overflow: hidden;
-		background: var(--gray-999_40);
 		box-shadow: var(--shadow-md);
-		border: 1px solid var(--text);
+		
 		white-space: nowrap;
 	}
 
