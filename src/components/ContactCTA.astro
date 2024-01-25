@@ -3,44 +3,11 @@ import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
 ---
 
-<aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:recruiter@example.com">
-		Send Me a Message
-		<Icon icon="paper-plane-tilt" size="1.2em" />
+<aside class="flex flex-col items-center gap-12 border-t border-b border-[#e3e6ee] dark:border-[#283044] p-20 pt-12 pb-12 bg-[#FFFFFF66] dark:bg-[#090B1166] shadow-sm lg:py-28 lg:px-28 lg:flex lg:flex-row lg:flex-wrap lg:justify-between">
+	<h2 class="text-center text-4xl max-w-[15ch] lg:text-left lg:text-3xl">Interested in working together?</h2>
+	<CallToAction href="mailto:recruiter@example.com" >
+	  Send Me a Message
+	  <Icon icon="paper-plane-tilt" size="1.2em" />
 	</CallToAction>
-</aside>
-
-<style>
-	aside {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 3rem;
-		border-top: 1px solid var(--gray-800);
-		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-	}
-
-	h2 {
-		font-size: var(--text-xl);
-		text-align: center;
-		max-width: 15ch;
-	}
-
-	@media (min-width: 50em) {
-		aside {
-			padding: 7.5rem;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-
-		h2 {
-			font-size: var(--text-3xl);
-			text-align: left;
-		}
-	}
-</style>
+  </aside>
+  
