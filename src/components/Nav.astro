@@ -22,7 +22,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 <nav >
 	<div class="menu-header ">
 		<a href="/" class="site-title">
-			<img src="/logo.svg" alt='logo' width="100" height="40"/>
+			<Icon icon="chart-line" size="1.6em" gradient />
 			  
 			Marius Ardelean
 		</a>
@@ -233,8 +233,8 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		text-decoration: none;
 	}
 
-	.link.active {
-		color: black;
+	.link.link:hover {
+		color: var(--back);
 	}
 
 	.menu-footer {

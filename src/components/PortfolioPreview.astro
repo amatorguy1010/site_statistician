@@ -18,7 +18,7 @@ const { data, slug } = Astro.props.project;
         </div>
     </div>
     <div class="relative opacity-0 group-hover:opacity-100 w-full px-6 py-16">
-        <div class="absolute top-0 left-0 w-full h-full bg-white/80 z-50 rounded-3xl">
+        <div class="absolute top-0 left-0 w-full h-full bg-white/80 z-50 rounded-3xl ">
             <div class="flex flex-col w-full h-full justify-center items-center text-white">
                 <span class="flex items-center text-3xl text-gray-900">
                     {data.title}
@@ -55,5 +55,5 @@ const { data, slug } = Astro.props.project;
         </div>
     </div>
 
-    <img src={data.img} alt={data.img_alt || ''} class="bg-cover absolute top-0 left-0 h-full w-full rounded-3xl" loading="lazy" decoding="async" />
+    <img src={data.img} alt={data.img_alt || ''} class="bg-cover absolute top-0 left-0 h-full w-full rounded-3xl object-cover" loading="lazy" decoding="async" />
 </a>
