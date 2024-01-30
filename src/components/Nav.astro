@@ -19,9 +19,9 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 ];
 ---
 
-<nav >
-	<div class="menu-header ">
-		<a href="/" class="site-title">
+<nav class="z-9999 relative   mb-14 font-bold text-2xl">
+	<div class="flex justify-between items-center gap-2 p-6">
+		<a href="/" class="flex items-center gap-2 text-black dark:text-white no-underline leading-3">
 			<Icon icon="chart-line" size="1.6em" gradient />
 			  
 			Marius Ardelean
@@ -154,27 +154,8 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <style>
 	nav {
-		z-index: 9999;
-		position: relative;
+		
 		font-family: var(--font-brand);
-		font-weight: 500;
-		margin-bottom: 3.5rem;
-	}
-
-	.menu-header {
-		display: flex;
-		justify-content: space-between;
-		gap: 0.5rem;
-		padding: 1.5rem;
-	}
-
-	.site-title {
-		display: flex;
-		gap: 0.5rem;
-		align-items: center;
-		line-height: 1.1;
-		color: var(--gray-0);
-		text-decoration: none;
 	}
 
 	.menu-button {
