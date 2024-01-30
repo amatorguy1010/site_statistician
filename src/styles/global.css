@@ -1,9 +1,10 @@
 /* Global variables */
 :root {
 	/* Colors */
+	--back-menu:white;
 	--tw-bg-opacity: 1;
 	--bg-nav:rgb(240 242 246 / var(--tw-bg-opacity));
-	--back-sun:#A5ACB7;
+	--back-sun:#EEF0F3;
 	--sun:#D4D7DD;
 	--back-pill:#F0F2F6;
 	--back:white;
@@ -69,6 +70,7 @@
 }
 
 :root.theme-dark {
+	--back-menu:#232C3C;
 	--bg-nav:rgb(17 24 39 / 0.2);
 	--back-sun:#343E4E;
 	--sun:#19202F;
