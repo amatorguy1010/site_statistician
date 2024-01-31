@@ -23,8 +23,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 	<div class="flex justify-between items-center gap-2 p-6">
 		<a href="/" class="flex items-center gap-2 text-black dark:text-white no-underline leading-3">
 			<Icon icon="chart-line" size="1.6em" gradient />
-			  
-			Marius Ardelean
+			<span class="whitespace-nowrap">Marius Ardelean</span>
 		</a>
 		<menu-button>
 			<template>
@@ -154,7 +153,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <style>
 	nav {
-		
+
 		font-family: var(--font-brand);
 	}
 
@@ -173,7 +172,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 	.menu-button[aria-expanded='true'] {
 		color: var(--gray-0);
 		background: linear-gradient(180deg, var(--gray-600), transparent),
-			radial-gradient(var(--gray-900), var(--gray-800) 150%);
+		radial-gradient(var(--gray-900), var(--gray-800) 150%);
 	}
 
 	.menu-button[hidden] {
@@ -216,7 +215,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		text-decoration: none;
 	}
 
-	
+
 
 	.menu-footer {
 		--icon-size: var(--text-xl);
@@ -297,21 +296,21 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			border-radius: 999rem;
 			z-index: -1;
 			--tw-border-opacity: 1;
-    		border-color: rgb(55 65 81 / var(--tw-border-opacity));
+			border-color: rgb(55 65 81 / var(--tw-border-opacity));
 			border-width: 1px;
 		}
 
 		.link {
 			padding: 0.5rem 1rem;
 			border-radius: 999rem;
-			
-				
+
+
 		}
 
 		.link.active {
 			color:var(--back);
 			background-color: var(--gray-100);
-			
+
 		}
 
 		.menu-footer {
