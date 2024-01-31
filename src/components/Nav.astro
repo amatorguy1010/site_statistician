@@ -39,7 +39,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			{
 				textLinks.map(({ label, href }) => (
 					<li>
-						<a 
+						<a
 							aria-current={Astro.url.pathname === href}
 							class:list={[
 								'link',
