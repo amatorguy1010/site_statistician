@@ -5,7 +5,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
-import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
@@ -28,13 +27,12 @@ const projects = (await getCollection('work'))
 <BaseLayout>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
-			<header class="hero">
+			<header class="flex flex-col items-center gap-8 md:grid md:grid-cols-[6fr_4fr] md:px-10 md:gap-15">
 				<Hero
 					title="Hello, my name is Marius Ardelean"
 					tagline="I am a Freelance Statistician who is currently based in Timisoara, Romania."
-					align="start"
 				>
-					<div class="roles">
+					<div class="hidden md:flex md:mt-6 gap-2">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
 						<Pill><Icon icon="chart-line" size="1.33em" /> Statistician</Pill>
 						<Pill><Icon icon="manager" size="1.33em" /> Manager</Pill>
@@ -44,8 +42,9 @@ const projects = (await getCollection('work'))
 				<img
 					width="480"
 					height="620"
-					src="/assets/marius_poza.jpg"
-					class="border border-gray-700"
+					alt="Marius Ardelean"
+					src="/assets/marius_ardelean.jpg"
+					class="border border-gray-700 aspect-[5/4] md:aspect-[3/4] object-cover object-top rounded-3xl md:rounded-[4.5rem] shadow-md"
 				/>
 			</header>
 
@@ -101,51 +100,6 @@ const projects = (await getCollection('work'))
 </BaseLayout>
 
 <style>
-
-	
-	.hero {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2rem;
-	}
-
-	.roles {
-		display: none;
-	}
-
-	.hero img {
-		aspect-ratio: 5 / 4;
-		object-fit: cover;
-		object-position: top;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-		
-	}
-
-	@media (min-width: 50em) {
-		.hero {
-			display: grid;
-			grid-template-columns: 6fr 4fr;
-			padding-inline: 2.5rem;
-			gap: 3.75rem;
-		}
-
-		.roles {
-			margin-top: 0.5rem;
-			display: flex;
-			gap: 0.5rem;
-		}
-
-		.hero img {
-			aspect-ratio: 3 / 4;
-			border-radius: 4.5rem;
-			object-fit: cover;
-		}
-	}
-
-	/* ====================================================== */
-
 	.section {
 		display: grid;
 		gap: 2rem;
