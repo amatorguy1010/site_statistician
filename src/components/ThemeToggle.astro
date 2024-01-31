@@ -80,13 +80,13 @@ import Icon from './Icon.astro';
 				document.body.classList[dark ? 'add' : 'remove']('dark')
 				// Assuming 'dark' is a boolean variable
 			if (dark) {
-			document.body.classList.add('bg-gradient-to-r', 'from-gray-900', 'to-gray-700');
-			document.body.classList.remove( 'from-gray-200', 'to-gray-400');
+			document.body.classList.add('bg-gradient-to-r', 'from-gray-900', 'to-gray-800');
+			document.body.classList.remove( 'from-gray-200', 'to-gray-300');
 			
 
 			} else {
-			document.body.classList.remove('bg-gradient-to-r', 'from-gray-900', 'to-gray-700');
-			document.body.classList.add('bg-gradient-to-r', 'from-gray-200', 'to-gray-400');
+			document.body.classList.remove('bg-gradient-to-r', 'from-gray-900', 'to-gray-800');
+			document.body.classList.add('bg-gradient-to-r', 'from-gray-200', 'to-gray-300');
 			}
 
 				button.setAttribute('aria-pressed', String(dark));
