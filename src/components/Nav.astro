@@ -35,7 +35,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		</menu-button>
 	</div>
 	<noscript>
-		<ul class="nav-items border border-gray-700 dark:bg-gray-900/10 bg-white/80">
+		<ul class=" border border-gray-700 dark:bg-gray-900/10 bg-white/80">
 			{
 				textLinks.map(({ label, href }) => (
 					<li>
@@ -73,7 +73,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		</div>
 	</noscript>
 	<div id="menu-content" class="mx-4" hidden>
-		<ul class="nav-items">
+		<ul class="  m-0 lg:flex gap-2 lg:text-sm text-lg leading-snug p-4 bg-white dark:bg-[#232C3C] opacity-95 border-b lg:border-t lg:border-l lg:border-r border-black dark:border-[#374151]  relative  lg:rounded-full rounded-t-xl border-0 px-2 py-2 shadow-xl dark:shadow-white/5">
 			{
 				textLinks.map(({ label, href }) => (
 					<li>
@@ -171,20 +171,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		right: 0;
 	}
 
-	.nav-items {
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		font-size: 1.125rem;
-		line-height: 1.2;
-		list-style: none;
-		padding: 2rem;
-		background-color: var(--back-menu);
-		opacity: 0.95;
-		border-bottom: 1px solid gray;
-		border-radius: 0.75rem 0.75rem 0 0 ;
-	}
 
 	.link {
 		display: inline-block;
@@ -255,27 +241,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			display: contents;
 		}
 
-		.nav-items {
-			position: relative;
-			flex-direction: row;
-			font-size: 0.875rem;
-			border-radius: 999rem;
-			border: 0;
-			padding: 0.5rem 0.5625rem;
-			background-color: var(--bg-nav);
-			box-shadow: var(--shadow-md);
-		}
-
-		.nav-items::before {
-			position: absolute;
-			inset: -1px;
-			content: '';
-			border-radius: 999rem;
-			z-index: -1;
-			--tw-border-opacity: 1;
-			border-color: rgb(55 65 81 / var(--tw-border-opacity));
-			border-width: 1px;
-		}
 
 		.link {
 			padding: 0.5rem 1rem;

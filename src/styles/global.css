@@ -2,8 +2,7 @@
 :root {
 	/* Colors */
 	--back-menu:white;
-	--tw-bg-opacity: 1;
-	--bg-nav:rgb(240 242 246 / var(--tw-bg-opacity));
+	--bg-nav:rgb(240 242 246 / 1);
 	--sun:#D4D7DD;
 	--back:white;
 	--gray-0: black;
