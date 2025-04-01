@@ -27,7 +27,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		</a>
 		<menu-button>
 			<template>
-				<button class="relative flex border-0 rounded-full p-2 text-xl text-gray-300 dark:text-gray-900 bg-[#000000] dark:bg-[#FFFFFF] shadow-md block md:hidden" aria-expanded="false">
+				<button class="relative flex border-0 rounded-full p-2 text-xl text-black dark:text-white bg-[#D4D7DD] dark:bg-[#1A2030] shadow-md block md:hidden" aria-expanded="false">
 					<span class="sr-only">Menu</span>
 					<Icon icon="list" />
 				</button>
@@ -73,10 +73,10 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		</div>
 	</noscript>
 	<div id="menu-content" class="mx-4" hidden>
-		<ul class="  m-0 lg:flex gap-2 lg:text-sm text-lg leading-snug p-4 bg-white dark:bg-[#232C3C] opacity-95 border-b lg:border-t lg:border-l lg:border-r border-black dark:border-[#374151]  relative  lg:rounded-full rounded-t-xl border-0 px-2 py-2 shadow-xl dark:shadow-white/5">
+		<ul class="  m-0 lg:flex gap-2 lg:text-sm text-lg leading-snug pt-0 pb-0 bg-white dark:bg-[#232C3C] opacity-95 border-b lg:border-t lg:border-l lg:border-r border-black dark:border-[#374151]  relative  lg:rounded-full rounded-t-xl border-0 px-2 py-2 shadow-xl dark:shadow-white/5">
 			{
 				textLinks.map(({ label, href }) => (
-					<li>
+					<li class="pt-2 pb-2 pl-2">
 						<a
 							aria-current={Astro.url.pathname === href}
 							class:list={[
